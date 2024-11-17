@@ -16,7 +16,7 @@ const App = () => {
     setProducts([...products, { ...newProduct, id: products.length + 1 }]); // add newProduct to products
   };
 
-  return (
+  return ( // return ProductList and AddProductForm components
     <div>
       <h1>Product Dashboard</h1>
       <ProductList products={products} />

@@ -13,8 +13,8 @@ const AddProductForm = ({ onAddProduct }) => { // add onAddProduct prop
       price: parseFloat(productPrice), 
       description: productDescription,
     };
-    onAddProduct(newProduct);
-
+    onAddProduct(newProduct); // call onAddProduct with newProduct
+    
     setProductName('');
     setProductPrice('');
     setProductDescription('');
