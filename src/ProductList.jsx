@@ -8,7 +8,7 @@ const ProductList = ({ products }) => { // destructure products from props
       <ul>
         {products.map((product) => (
           <ProductItem
-            key={product.id} 
+            key={product.id} // key prop is required when rendering a list of components
             name={product.name} 
             price={product.price} 
             description={product.description} 
